@@ -4,6 +4,9 @@ body{
     margin: 0;
 }
 
+
+/*nav section*/
+
 nav{
     background-color: black;
     padding: 20px 50px;
@@ -52,6 +55,10 @@ nav{
     color: lightgray;
     font-weight: 400;
 }
+
+/*end of nav section*/
+
+/*slider section*/
 
 .slider{
     background-image: url(./img/wall.jpg);
@@ -158,3 +165,113 @@ nav{
 .sliderItem:nth-child(5) .sliderPrice{
     color: rgb(124,115,80);
 }
+
+/*end of slider section*/
+
+/*features section*/
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featureImg{
+    width: 50px;
+    height: 50px;
+}
+
+.featureTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.featureDesc{
+    color: grey;
+    width: 50%;
+    height: 100px;
+}
+
+/*end of features section*/
+
+/*product section*/
+
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+.productImg{
+    width: 50%;
+}
+
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+
+.productTitle{
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.productDesc{
+    font-size: 14px;
+    color: grey;
+}
+
+.colors , .sizes{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color:last-child{
+    background-color: darkblue;
+}
+
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.productButton{
+    float: right;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.productButton:hover{
+    background-color: white;
+    color: black;
+}
+/*end of product section*/
